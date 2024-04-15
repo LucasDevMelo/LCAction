@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style2.css">
+</head>
+<body>
+            <div class="nav" id="nav">
+                <img src="/LCAction/assets/img/logo.png" alt="" class="nav_logo">
+                <img src="/LCAction/assets/img/user.png" alt="" class="nav_user">
+            </div>
+            
+                <ul class='slider'>
+                  <li class='item' style="background-image: url(assets/img/reidacomediaBanner.jpg)">
+                    <div class='content'>
+                      <h2 class='title'>O Rei da Comédia</h2>
+                      <p class='description'> A comédia de humor politicamente incorreto do diretor Martin Scorsese mostra até que ponto alguém pode chegar para se apresentar na TV.  </p>
+                      <button>Assistir</button>
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url(assets/img/superheroiBanner.jpg)">
+                    <div class='content'>
+                      <h2 class='title'>Super-Herói: O filme</h2>
+                      <p class='description'>Rick Riker é um estudante comum do colegial. Porém, ao ser mordido por uma libélula geneticamente modificada ganha superpoderes. Agora sua missão é proteger a cidade das mãos do malvado Hourglass, que suga a vida de suas vítimas.  </p>
+                      <button>Assistir</button>
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url(assets/img/amsterdamBanner.jpg)">
+                    <div class='content'>
+                      <h2 class='title'>Amsterdam</h2>
+                      <p class='description'> Três amigos se encontram no centro de uma das tramas mais secretas da história americana.  </p>
+                      <button>Assistir</button>
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url(assets/img/interestelarBanner.jpg)">
+                    <div class='content'>
+                      <h2 class='title'>Interestelar</h2>
+                      <p class='description'>
+                        As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.              </p>
+                      <button>Assistir</button>
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url(assets/img/divertidamenteBanner.jpg)">
+                    <div class='content'>
+                      <h2 class='title'>Divertidamente</h2>
+                      <p class='description'>
+                        Com a mudança para uma nova cidade, as emoções de Riley, que tem apenas 11 anos de idade, ficam extremamente agitadas. Uma confusão na sala de controle do seu cérebro deixa a Alegria e a Tristeza de fora, afetando a vida de Riley radicalmente.</p>
+                      <button>Assistir</button>
+                    </div>
+                  </li>
+                </ul>
+                <nav class='nav'>
+                  <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+                  <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+                </nav>
+              </main>
+    
+        <!-- Home cards 1 -->
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+        <div class="menu-container">
+            <nav class="menu">
+                <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                <label class="menu-open-button" for="menu-open">
+                <p class="categorias">categorias</p>
+            </label>
+       
+         
+                <a href="moviesHome.html" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
+                <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+                <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+                <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+                <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+                <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+            </nav>
+        </div>
+
+          <!-- Footer -->
+          <footer class="footer">
+            <div class="footer-inner">
+              <div><i class="fas fa-globe fa-2x"></i> English (United States)</div>
+              <ul>
+                <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Contact Microsoft</a></li>
+                        <li><a href="#">Privacy & cookies</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Trademarks</a></li>
+                        <li><a href="#">Safety & eco</a></li>
+                        <li><a href="#">About our ads</a></li>
+                        <li><a href="#">&copy; Microsoft 2020</a></li>
+              </ul>
+            </div>
+          </footer>
+
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script>const slider = document.querySelector('.slider');
+
+        function activate(e) {
+          const items = document.querySelectorAll('.item');
+          e.target.matches('.next') && slider.append(items[0])
+          e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+        }
+        
+        document.addEventListener('click',activate,false);
+        </script>
+    
+</body>
+<script>
+    document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+</script>
+</html>
