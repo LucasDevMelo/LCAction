@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
   }
+
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -105,7 +106,7 @@
     padding: 0 20px 0 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .footer div {
@@ -127,90 +128,13 @@
     margin-right: 30px;
     margin-bottom: 20px;
   }
-  
-  @media(max-width: 700px) {
-    .menu-btn {
-      display: block;
-    }
-  
-    .menu-btn:hover {
-      opacity: 0.5;
-    }
-  
-    .main-nav ul.right-menu {
-      margin-right: 50px;
-    }
-  
-    .main-nav ul.main-menu {
-      display: block;
-      position: absolute;
-      top:0;
-      left: 0;
-      background: #f2f2f2;
-      width: 50%;
-      height: 100%;
-      border-right: #ccc 1px solid;
-      opacity: 0.9;
-      padding: 30px;
-      transform: translateX(-500px);
-      transition: transform 0.5s ease-in-out;
-    }
-  
-    .main-nav ul.main-menu li {
-      padding: 10px;
-      border-bottom: #ccc solid 1px;
-      font-size: 14px;
-    }
-  
-    .main-nav ul.main-menu li:last-child {
-      border-bottom: 0;
-    }
-  
-    .main-nav ul.main-menu.show {
-      transform: translateX(-20px);
-    }
-  
-    .home-cards {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .xbox .content p {
-      display: none;
-    }
-  
-    .xbox .content h2 {
-      margin-bottom: 20px;
-    }
-  
-    .carbon .content {
-      width: 85%;
-    }
-  
-    .links .links-inner {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media(max-width: 500px) {
-    .home-cards {
-      grid-template-columns: 1fr;
-    }
-  
-    .links .links-inner {
-      grid-template-columns: 1fr;
-    }
-  
-    .links .links-inner ul {
-      margin-bottom: 20px;
-    }
-  }
+
 
   .item {
-    width: 200px;
-    height: 300px;
-    list-style-type: none;
+    width: 150px;
+    height: 225px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
     z-index: 1;
     background-position: center;
@@ -244,11 +168,12 @@
     transform: translateY(-50%);
     font: 400 1rem helvetica,sans-serif;
     color: white;
-    text-shadow: 0 3px 8px rgba(0,0,0);
+    text-shadow: 0 3px 8px rgba(0,0,3);
     opacity: 0;
     display: none;
   
     & .title {
+      font-size: 50px;
       font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
     }
@@ -256,16 +181,16 @@
     & .description {
       line-height: 1.7;
       margin: 1rem 0 1.5rem;
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
   
     & button {
-      width: fit-content;
+      width: 150px;
       background-color: rgba(244,149,49,0.8);
       color: white;
       border: 2px solid rgb(244,149,49);
       border-radius: 0.25rem;
-      padding: 0.75rem;
+      padding: 01.00rem;
       cursor: pointer;
     }
   }
@@ -289,7 +214,7 @@
   .nav {
     position: absolute;
     bottom: 2rem;
-    left: 50%;
+    left: 65.5%;
     transform: translateX(-50%);
     z-index: 5;
     user-select: none;
@@ -707,8 +632,103 @@
 }
 
 .categoriasDeFilmes{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../img/movieTheater.jpg');
   text-align: center;
   color: white;
+}
+
+.footerText {
+  text-align: center;
+  color: white;
+  text-decoration: solid;
+  justify-content: center;
+}
+
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.linha{
+  display: flex;
+}
+
+.row_posters { 
+  display: flex;
+  overflow-y: flex;
+  overflow-x: scroll;
+  padding: 20px;  
+  padding-right: 0px;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_posterLarge {
+
+  max-height: 260px;
+  min-height: 260px;
+  min-width: 170px;
+  max-width: 170px;
+  margin-right: 10px;
+}
+
+.row_posterLarge:hover{
+  transform: scale(1.08);
+  transition: all 0.2s;
+}
+
+.sobedesce {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: min-content;
+  padding-top: 115px;
+}
+
+.sobedesce > button {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.sobedesce > button:hover {
+  transform: scale(1.08);
+  transition: all 0.2s;
+}
+
+.sobedesce > button > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sobedesceTop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: min-content;
+  padding-top: 105px;
+}
+
+.sobedesceTop > button {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.sobedesceTop > button:hover {
+  transform: scale(1.08);
+  transition: all 0.2s;
+}
+
+.sobedesceTop > button > img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
