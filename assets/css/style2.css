@@ -455,8 +455,8 @@
  .menu-open:checked ~ .menu-item:nth-child(3) {
     transition-duration: 180ms;
     -webkit-transition-duration: 180ms;
-    -webkit-transform: translate3d(0.08361px, -246.99997px, 0);
-    transform: translate3d(0.08361px, -246.99997px, 0);
+    -webkit-transform: translate3d(0.08361px, -224.99997px, 0);
+    transform: translate3d(0.08361px, -224.99997px, 0);
  }
  
  .menu-open:checked ~ .menu-item:nth-child(4) {

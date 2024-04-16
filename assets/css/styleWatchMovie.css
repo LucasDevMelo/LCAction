@@ -107,7 +107,7 @@ body {
 }
 
 .banner {
-    background-image: url('../img/banner.png');
+    background-image: url('../img/superheroiBanner.jpg');
     background-size: cover;
     background-position: center center;
     color: white;
@@ -264,3 +264,40 @@ footer{
         margin: 4px;
     }
 }
+
+/* Footer */
+.footer {
+    background: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 20px 0;
+  }
+  
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer div i {
+    margin-right: 10px;
+  }
+  
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer li {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
