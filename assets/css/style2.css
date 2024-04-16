@@ -158,6 +158,11 @@
     &:nth-child(4) { left: calc(50% + 220px); }
     &:nth-child(5) { left: calc(50% + 440px); }
     &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
+    &:nth-child(7) { left: calc(50% + 660px); opacity: 0; }
+    &:nth-child(8) { left: calc(50% + 660px); opacity: 0; }
+    &:nth-child(9) { left: calc(50% + 660px); opacity: 0; }
+    &:nth-child(10) { left: calc(50% + 660px); opacity: 0; }
+    &:nth-child(11) { left: calc(50% + 660px); opacity: 0; }
   }
   
   .content {
@@ -366,7 +371,7 @@
  } */
  
  .menu-item:hover {
-    background: #ffffff;
+    background:#293439 ;
     color: #3290B1;
  }
  
@@ -404,6 +409,11 @@
     -webkit-transition-duration: 180ms;
     transition-duration: 180ms;
  }
+
+ .menu-item:nth-child(10) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
 
  .menu-item {
     color: white;
@@ -487,9 +497,16 @@
  .menu-open:checked ~ .menu-item:nth-child(9) {
     transition-duration: 780ms;
     -webkit-transition-duration: 780ms;
-    -webkit-transform: translate3d(-0.25084px, -190.9997px, 0);
-    transform: translate3d(-0.25084px, -190.9997px, 0);
+    -webkit-transform: translate3d(200.25084px, 0px, 0);
+    transform: translate3d(200.25084px, 0px, 0);
  }
+
+ .menu-open:checked ~ .menu-item:nth-child(10) {
+  transition-duration: 780ms;
+  -webkit-transition-duration: 780ms;
+  -webkit-transform: translate3d(-200.25084px, 0px, 0);
+  transform: translate3d(-200.25084px, 0px, 0);
+}
  
  .blue {
     background-position: center;
@@ -606,6 +623,46 @@
   color: #F49531; /* Cor do texto */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.5); /* Sombra do texto */
   font-size: 24px; /* Tamanho da fonte */
+}
+
+.black {
+  background-position: center;
+  background-size: cover;
+  background-image: url('../img/suspense.jpg');
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.black:hover::after {
+content: "Suspense"; /* Texto que aparecerá quando o mouse passar sobre o elemento */
+vertical-align: baseline;
+position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+top: 50%; /* Centraliza verticalmente */
+left: 50%; /* Centraliza horizontalmente */
+transform: translate(-50%, -50%); /* Centraliza o elemento */
+color: #F49531; /* Cor do texto */
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.5); /* Sombra do texto */
+font-size: 24px; /* Tamanho da fonte */
+}
+
+.white {
+  background-position: center;
+  background-size: cover;
+  background-image: url('../img/documentario.jpg');
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.white:hover::after {
+content: "Documentário"; /* Texto que aparecerá quando o mouse passar sobre o elemento */
+vertical-align: baseline;
+position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+top: 50%; /* Centraliza verticalmente */
+left: 50%; /* Centraliza horizontalmente */
+transform: translate(-50%, -50%); /* Centraliza o elemento */
+color: #F49531; /* Cor do texto */
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.5); /* Sombra do texto */
+font-size: 24px; /* Tamanho da fonte */
 }
  
  .credit {
