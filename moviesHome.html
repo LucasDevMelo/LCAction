@@ -33,7 +33,7 @@
     <div class="linha">
         <div class="row">
             <h2>Mais vistos</h2>
-            <div class="row_posters">
+            <div class="row_posters" id="carrossel1">
                 <img src="assets/img/large-movie1.jpg" alt="" class="row_posterLarge" />
                 <a href="movie.html">
                     <img src="assets/img/large-movie2.jpg" alt=""  class="row_posterLarge" />
@@ -46,11 +46,16 @@
                 <img src="assets/img/large-movie8.jpg" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie9.jpg" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie10.jpg" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie6.jpg" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie7.jpg" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie8.jpg" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie9.jpg" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie10.jpg" alt="" class="row_posterLarge" />
             </div>
         </div>
         <div class="sobedesce">
-            <button type="submit"><img src="./assets/img/setacima.png" alt=""></button>
-            <button type="submit"><img src="./assets/img/setabaixo.png" alt=""></button>
+            <button type="submit" class="prev"><img src="./assets/img/setacima.png" alt=""></button>
+            <button type="submit" class="next"><img src="./assets/img/setabaixo.png" alt=""></button>
         </div>
     </div>
 
@@ -58,7 +63,12 @@
     <div class="linha">
         <div class="row">
             <h2>Top 10</h2>
-            <div class="row_posters">
+            <div class="row_posters" id="carrosse2">
+                <img src="assets/img/small-movie1.jpg" alt="" class="row_poster" />
+                <img src="assets/img/small-movie2.jpg" alt="" class="row_poster" />
+                <img src="assets/img/small-movie3.jpg" alt="" class="row_poster" />
+                <img src="assets/img/small-movie4.jpg" alt="" class="row_poster" />
+                <img src="assets/img/small-movie5.jpg" alt="" class="row_poster" />
                 <img src="assets/img/small-movie1.jpg" alt="" class="row_poster" />
                 <img src="assets/img/small-movie2.jpg" alt="" class="row_poster" />
                 <img src="assets/img/small-movie3.jpg" alt="" class="row_poster" />
@@ -77,12 +87,17 @@
     <div class="linha">
         <div class="row">
             <h2>Novidades</h2>
-            <div class="row_posters">
+            <div class="row_posters" id="carrossel3">
                 <img src="assets/img/large-movie23.JPG" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie24.jpg" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie25.jpg" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie26.jpg" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie27.jpg" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie28.JPG" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie29.JPG" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie30.JPG" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie31.jpg" alt="" class="row_posterLarge" />
+                <img src="assets/img/large-movie32.JPG" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie28.JPG" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie29.JPG" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie30.JPG" alt="" class="row_posterLarge" />
@@ -100,7 +115,7 @@
     <div class="linha">
         <div class="row">
             <h2>Para rir até cair</h2>
-            <div class="row_posters">
+            <div class="row_posters" id="carrossel4">
                 <img src="assets/img/large-movie6.jpg" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie7.jpg" alt="" class="row_posterLarge" />
                 <img src="assets/img/large-movie8.jpg" alt="" class="row_posterLarge" />
@@ -150,17 +165,7 @@
         </div>
       </footer>
 
-    <script>
-        const nav = document.getElementById('nav')
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY >= 100) {
-                nav.classList.add('nav_darker_gray')
-            } else {
-                nav.classList.remove('nav_darker_gray');
-            }
-        });
-    </script>
+    <script src="scriptMoviesHome.js"></script>
 </body>
 
 </html>

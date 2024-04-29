@@ -18,9 +18,11 @@ body {
 }
 
 .row_posters { 
+    width: 100%;
     display: flex;
-    overflow-y: flex;
-    overflow-x: scroll;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
     padding: 20px;  
     padding-right: 0px;
 }
@@ -40,6 +42,23 @@ body {
     min-width: 170px;
     max-width: 170px;
     margin-right: 10px;
+    line-height: 100px;
+}
+
+.prev, .next {
+   
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
 
 .row_posterLarge:hover{
@@ -50,6 +69,7 @@ body {
 .row {
     color: white;
     margin-left: 20px;
+    overflow-x: auto;
 }
 
 .linha{
