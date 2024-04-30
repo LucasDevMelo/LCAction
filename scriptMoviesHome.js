@@ -8,28 +8,25 @@ const nav = document.getElementById('nav')
             }
         });
 
-        const carrosseis = document.querySelectorAll('.row_posters');
+        const carrossel = document.querySelector('.row_posters');
+const leftButton = document.getElementById('leftButton');
+const rightButton = document.getElementById('rightButton');
 
-        carrosseis.forEach(carrossel => {
-            let isMouseDown = false;
-            let startX;
-            let scrollLeft;
+const itemWidth = carrossel.firstElementChild.offsetWidth; // largura de cada item do carrossel
 
-            carrossel.addEventListener('mousedown', (e) => {
-                isMouseDown = true;
-                startX = e.pageX - carrossel.offsetLeft;
-                scrollLeft = carrossel.scrollLeft;
-            });
+leftButton.addEventListener('click', () => {
+    carrossel.scrollTo({
+        left: carrossel.scrollLeft - (5 * itemWidth),
+        behavior: 'smooth' // Adiciona uma transição suave
+    });
+});
 
-            document.addEventListener('mouseup', () => {
-                isMouseDown = false;
-            });
+rightButton.addEventListener('click', () => {
+    carrossel.scrollTo({
+        left: carrossel.scrollLeft + (5 * itemWidth),
+        behavior: 'smooth' // Adiciona uma transição suave
+    });
+});
 
-            carrossel.addEventListener('mousemove', (e) => {
-                if (!isMouseDown) return;
-                const x = e.pageX - carrossel.offsetLeft;
-                const walk = (x - startX) * 3;
-                carrossel.scrollLeft = scrollLeft - walk;
-            });
-        });
+
 

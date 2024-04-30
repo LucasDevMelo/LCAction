@@ -27,6 +27,10 @@ body {
     padding-right: 0px;
 }
 
+.row_posters * {
+    user-select: none;
+}
+
 .row_poster:hover{
     transform: scale(1.08);
 }
