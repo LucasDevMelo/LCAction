@@ -35,3 +35,4 @@ botaoConjuntos.forEach(conjunto => {
         });
     }
 });
+

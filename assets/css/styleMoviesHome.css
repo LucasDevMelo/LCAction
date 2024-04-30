@@ -281,10 +281,3 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
-@media (max-width: 700px){
-
-    .socialIcons a{
-        padding: 8px;
-        margin: 4px;
-    }
-}
