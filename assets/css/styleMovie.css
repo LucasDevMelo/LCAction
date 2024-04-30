@@ -57,11 +57,11 @@ body {
 
 .sobedesce {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     justify-content: space-evenly;
     height: min-content;
-    padding-top: 115px;
-}
+    padding-top: 150px;
+    }
 
 .sobedesce > button {
     background-color: transparent;

@@ -8,17 +8,16 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Seleciona todos os elementos com a classe '.sobedesce'
+
 const botaoConjuntos = document.querySelectorAll('.sobedesce');
 
-// Para cada conjunto de botões encontrado, atribui o evento de clique aos botões de navegação dentro dele
 botaoConjuntos.forEach(conjunto => {
     const leftButton = conjunto.querySelector('#leftButton');
     const rightButton = conjunto.querySelector('#rightButton');
     const carrossel = conjunto.parentElement.querySelector('.row_posters');
 
     if (carrossel && leftButton && rightButton) {
-        const itemWidth = carrossel.firstElementChild.offsetWidth; // largura de cada item do carrossel
+        const itemWidth = carrossel.firstElementChild.offsetWidth; 
         const numItemsToScroll = 5;
         let isScrolling = false;
 
@@ -42,7 +41,7 @@ botaoConjuntos.forEach(conjunto => {
             const startTime = performance.now();
             const startScroll = element.scrollLeft;
             const distance = scrollAmount - startScroll;
-            const duration = 500; // Tempo de duração da animação em milissegundos
+            const duration = 500; 
 
             function step(currentTime) {
                 const elapsedTime = currentTime - startTime;
