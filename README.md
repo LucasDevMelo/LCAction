@@ -15,6 +15,8 @@ Bem-vindo ao LCAction, o destino definitivo para os amantes do cinema! Explore u
 
 Seja você um aficionado por clássicos do cinema, um fã ávido de filmes de ação, um apreciador de dramas emocionantes ou um entusiasta de documentários inspiradores, o LCAction tem algo especial para todos os gostos. Prepare a pipoca, relaxe e deixe-se envolver pela magia do cinema em sua própria casa. Seu ingresso para uma jornada cinematográfica extraordinária aguarda aqui!"
 
+Acesse o site: https://lcaction.netlify.app/
+
 -----------------------------------------------------------------------------
 
 Description:
