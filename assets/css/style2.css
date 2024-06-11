@@ -170,31 +170,45 @@ ul {
   position: absolute;
   top: 50%;
   left: 3rem;
+  background-color: rgba(0, 0, 0, 0.712);
+  border-radius: 10px;
   transform: translateY(-50%);
   font: 400 1rem helvetica,sans-serif;
   color: white;
-  text-shadow: 0 3px 8px rgba(0,0,3);
+  text-shadow: 0 3px 8px rgba(0,0,9);
   opacity: 0;
   display: none;
 
   & .title {
-    font-size: 50px;
+    margin-top: 20px;
+    font-size: 45px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    text-align: center;
   }
 
   & .description {
     line-height: 1.7;
     margin: 1rem 0 1.5rem;
     font-size: 1.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration:double;
+    text-align: center;
   }
 
   & button {
-    width: 150px;
+    width: 180px;
     background-color: rgba(244,149,49,0.8);
     color: white;
     border: 2px solid rgb(244,149,49);
     border-radius: 0.25rem;
+    font-size: 25px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 25px;
     padding: 01.00rem;
     cursor: pointer;
   }
